@@ -1,5 +1,7 @@
 # Angular Pure Impure Pipe
 
+![Angular-Pipe](pipe.png)
+
 Pure pipes are executed only when a “PURE CHANGE” to the input value is detected. A pure change is either a change to a primitive input (string, number etc) value. or changed Object reference. By default a pipe is pure pipe.
 Impure pipe executes every time irrespective of source has changed or not. which leads to bad performance.
 Examples of Impure Pipes
