@@ -1,0 +1,23 @@
+<h1>Percentage Pipe (Pure)</h1>
+<div *ngFor="let stud of students">
+    {{stud.score | percentage : stud.total}}
+</div>
+
+<h1>Filter (Pure) Pipe</h1>
+<p>search using John</p>
+<input type="text" [(ngModel)]="searchVal"/>
+<div *ngFor="let stud of students | filter: searchVal">
+    {{stud.name}}
+</div>
+<button (click)="addStudent()">Add Student</button>
+
+<!-- <h1>Format Pipe (Impure)</h1>
+<div *ngFor="let val of money">
+    {{ val | format }}    
+    <button (click)="val.amount = val.amount + 10">Increment</button>
+</div> -->
+<!-- <h1>JSON Pipe (Pure)</h1>
+<div *ngIf="userString">
+    {{userString | strToJson}}
+</div> -->
+
